@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+    <html lang="fr">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <title>Gd'Or ERP</title>
+
+            <!-- Favicon -->
+            <link rel="icon" href="images/favicongdor.ico" type="image/x-icon">
+
+            <!-- Lien CSS -->
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/animations.css">
+            <link rel="stylesheet" href="css/responsive.css">
+
+            <!-- Leaflet CSS -->
+            <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+        </head>
+
+        <body>
+
+            <!-- ================= PRELOADER ================= -->
+            <div id="preloader">
+                <div class="preloader-content">
+                    <img src="images/splashscreen.jpg" alt="Chargement Gd'Or" />
+                    <!-- <p>Chargement en cours...</p>-->
+                </div>
+            </div>
+
+            <!-- ================= TOP BAR ================= -->
+            <div class="top-bar">
+                <div class="top-container">
+
+                    <div class="top-left">
+                        <span> caurisct@gdor.fr</span>
+                    </div>
+
+                    <div class="top-right">
+                        <span> +229 01 21 32 35 80</span>
+                    </div>
+
+                </div>
+            </div>    
+
+            <!-- ================= HEADER ================= -->
+
+            <header>
+
+                <div class="logo">
+                    <img src="images/logo-GC-bon5.png" alt="Logo Gd'Or">
+                </div>
+
+                <div class="menu-toggle" id="menuToggle">
+                ☰
+                </div>
+
+                <nav id="navMenu">
+                    <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>    
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="modules.html" id="modulesBtn">Modules</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+
+            </header> 
+
+
+            <!-- ================= MAIN SLIDER ================= -->
+            <section class="main-slider">
+                <div class="slide active">
+                    <img src="images/hero/slider8.gif" alt="Slide 1">
+                    <div class="slide-content">
+                        <div class="slide-bubble">
+                            <span>ERP Gd'Or - Gestion Intelligente</span>
+                            <span class="bubble-dot"></span>
+                        </div>
+                        <div class="slide-details">
+                            <p>Optimisez vos processus d'eau et d'électricité.</p>
+                            <button onclick="window.location.href='contact.html'">
+                                Demander une démo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/hero/slide4.gif" alt="Slide 2">
+                        <div class="slide-content">
+                            <div class="slide-bubble">
+                                <span>Facturation Automatique</span>
+                                <span class="bubble-dot"></span>
+                            </div>
+                            <div class="slide-details">
+                                <p>Gagnez du temps avec la facturation automatisée.</p>
+                                <button onclick="window.location.href='contact.html'">
+                                    Demander une démo
+                                </button>
+                            </div>
+                        </div>
+                </div>
+                <div class="slide">
+                    <img src="images/hero/slider10.gif" alt="Slide 3">
+                    <div class="slide-content">
+                        <div class="slide-bubble">
+                            <span>Compteur intélligent</span>
+                            <span class="bubble-dot"></span>
+                        </div>
+                        <div class="slide-details">
+                            <p>système de gestion intelligente des services publics (SGISP).</p>
+                            <button onclick="window.location.href='contact.html'">
+                                Demander une démo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="slide">
+                    <img src="images/hero/slider11.jpg" alt="Slide 4">
+                    <div class="slide-content">
+                        <div class="slide-bubble">
+                            <span>Inédit !!!</span>
+                            <span class="bubble-dot"></span>
+                        </div>
+                        <div class="slide-details">
+                            <p>Réglez vos factures d’électricité et d’eau 24h/24 et 7j/7.</p>
+                            <button onclick="window.location.href='contact.html'">
+                                Demander une démo
+                            </button>
+                        </div>
+                    </div>
+                </div>-->
+            </section>
+
+            <!-- ================= HERO ================= -->
+
+            <section class="hero">
+
+                <h1>ERP Gd'Or</h1>
+
+                <p>
+                    Solution de gestion pour les sociétés d’eau, d’électricité et de gestion des déchets.
+                </p>
+
+                <button id="demoBtn" onclick="window.location.href='contact.html'">
+                    Demander une démo
+                </button>
+                
+            </section>
+
+
+            <section class="slider">
+
+                <div class="slide active">
+                    <h2>ERP Gd'Or</h2>
+                    <p>Gestion intelligente des sociétés d'eau</p>
+                </div>
+
+                <div class="slide">
+                    <h2>Facturation automatique</h2>
+                    <p>Automatisation complète de la facturation</p>
+                </div>
+
+                <div class="slide">
+                    <h2>Relevé mobile</h2>
+                    <p>Suivi des index en temps réel</p>
+                </div>
+
+                <div class="slide">
+                    <h2>e-Caisse</h2>
+                    <p>Gestion moderne des encaissements</p>
+                </div>
+
+                <div class="slide">
+                    <h2>e-Stocks</h2>
+                    <p>Gestion intelligente des stocks</p>
+                </div>
+
+                <div class="slide">
+                    <h2>e-Coupure</h2>
+                    <p>Gestion des coupures terrain</p>
+                </div>
+
+
+                <div class="slide">
+                    <h2>e-Agent</h2>
+                    <p>Application pour agents terrain</p>
+                </div>
+
+                <div class="slide">
+                    <h2>e-Agence</h2>
+                    <p>Gestion digitale des agences</p>
+                </div>
+
+                <div class="slide">
+                    <h2>e-Client</h2>
+                    <p>Interface client digitale</p>
+                </div>
+
+                <div class="slide">
+                    <h2>e-SuiviRel</h2>
+                    <p>Suivi des releveurs en temps réel</p>
+                </div>
+
+                <div class="slide">
+                    <h2>Gestion de la clientèle</h2>
+                    <p>17 fonctionnalités puissantes en temps rée</p>
+                </div>
+
+                <div class="slide">
+                    <h2>Comptabilité générale,analytique et budgetaire</h2>
+                    <p>Conforme SYSCOHADA</p>
+                </div>
+
+                <div class="slide">
+                    <h2>Immobilisations</h2>
+                    <p>Gestion complète des actifs</p>
+                </div>
+
+                <div class="slide">
+                    <h2>Achats & Stocks</h2>
+                    <p>Gestion intelligente des stocks</p>
+                </div>
+
+                <div class="slide">
+                    <h2>Paie & GRH</h2>
+                    <p>Gestion des ressources humaines</p>
+                </div>
+
+            </section>
+
+            <!-- ================= DOMAINES D’INTERVENTION ================= -->
+            <section class="domains">
+                <h2>Groupe Cauris Informatique</h2>
+                <p class="justified">Nous vous accompagnons depuis la stratégie et le pilotage des projets jusqu’aux phases 
+                    les plus concrètes de mise en œuvre et d’assistance opérationnelle.</p>
+
+                <div class="domains-grid">
+                    <div class="domain-card">
+                        <img src="images/icons/savoir.png" alt="Notre savoir-faire">
+                        <h3>Notre savoir-faire</h3>
+                        <p>Apporter de la valeur à votre système d’information.</p>
+                    </div>
+                    <div class="domain-card">
+                        <img src="images/icons/objectif.png" alt="Notre objectif">
+                        <h3>Notre objectif</h3>
+                        <p>Vous proposer les axes de progrès de vos outils.</p>
+                    </div>
+                    <div class="domain-card">
+                        <img src="images/icons/resultat.png" alt="Notre résultat">
+                        <h3>Notre résultat</h3>
+                        <p>Faire maîtriser ces axes de progrès par votre personnel.</p>
+                    </div>
+                    <div class="domain-card">
+                        <img src="images/icons/original.png" alt="Notre originalité">
+                        <h3>Notre originalité</h3>
+                        <p>
+                            Adapter l’outil informatique aux professions de la
+                            distribution d‘Eau et d’Electricité notamment en milieu difficile dans les pays
+                            Sub-sahariens.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= NOS PRODUITS ================= -->
+            <section class="products">
+
+                <h2>Nos progiciels</h2>
+                <p class="justified">
+                    Nous développons des progiciels performants et adaptés aux besoins 
+                    des entreprises afin d’optimiser la gestion, l’automatisation et
+                    la performance des activités professionnelles.
+                </p>
+
+                <div class="products-grid">
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/clientele.png">
+                        <h3>Gestion Clientèle</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Gestion complète des abonnés eau et électricité
+                            avec suivi des contrats, consommations et facturation.
+                        </p>
+                        <a href="pro-gestion-clientel.html">Découvrir →</a>
+                    </div>
+                </div>
+
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/comptabilite.png">
+                        <h3>Comptabilité</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Comptabilité générale, analytique et budgétaire
+                            pour un pilotage précis de votre entreprise.
+                        </p>
+                        <a href="pro-compta-gene.html">Découvrir →</a>
+                    </div>
+                </div>
+
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/paie.png">
+                        <h3>Paie & RH</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Gestion complète du personnel, paie automatisée
+                            et suivi administratif des ressources humaines.
+                        </p>
+                        <a href="pro-paie-grh.html">Découvrir →</a>
+                    </div>
+                </div>
+
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/stocks.png">
+                        <h3>Gestion des stocks</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Suivi des inventaires, gestion des mouvements
+                            et optimisation des approvisionnements.
+                        </p>
+                        <a href="pro-achat-stock.html">Découvrir →</a>
+                    </div>
+                </div>
+
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/immobilisations.png">
+                        <h3>Immobilisations</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Gestion complète des actifs et amortissements
+                            avec suivi détaillé du patrimoine.
+                        </p>
+                        <a href="prog-immo.html">Découvrir →</a>
+                    </div>
+                </div>
+
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/monetique.png">
+                        <h3>Monétique</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Gestion des paiements électroniques,
+                            transactions sécurisées et intégration bancaire.
+                        </p>
+                        <a href="pro-gestion-clientel.html">Découvrir →</a>
+                    </div>
+                </div>
+
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/webservice.png">
+                        <h3>Gestion à distance</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Paiement mobile, web services
+                            et relevé d’index mobile connecté.
+                        </p>
+                        <a href="modules.html#modules">Découvrir →</a>
+                    </div>
+                </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="products">
+
+                <h2>Nos applications mobiles et web </h2>
+                <p class="justified">
+                    Nous développons des applications mobiles et web performantes pour optimiser
+                    les activités et améliorer l’expérience utilisateur des entreprises.
+                </p>
+
+                <div class="products-grid">
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/ecaisse.png">
+                        <h3>e-Caisse</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Gestion moderne des encaissements
+                        </p>
+                        <a href="nouv-tech-e-caisse.html">Découvrir →</a>
+                    </div>
+                </div>
+
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/estock.png">
+                        <h3>e-Stocks</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Gestion intelligente des stocks
+                        </p>
+                        <a href="nouv-tech-e-stocks.html">Découvrir →</a>
+                    </div>
+                </div>
+
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/ecoupure.png">
+                        <h3>e-Coupure</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Gestion des coupures terrain
+                        </p>
+                        <a href="nouv-tech-e-coupure.html">Découvrir →</a>
+                    </div>
+                </div>
+
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/ereleve.png">
+                        <h3>e-Relève</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Relève mobile des compteurs
+                        </p>
+                        <a href="nouv-tech-ereleve.html">Découvrir →</a>
+                    </div>
+                </div>
+
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/eagent.png">
+                        <h3>e-Agent</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Application pour agents terrain
+                        </p>
+                        <a href="nouv-tech-e-agent.html">Découvrir →</a>
+                    </div>
+                </div>
+
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/eagence.png">
+                        <h3>e-Agence</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Gestion digitale des agences
+                        </p>
+                        <a href="nouv-tech-e-agence.html">Découvrir →</a>
+                    </div>
+                </div>
+
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/eclient.png">
+                        <h3>e-Client</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Interface client digitale
+                        </p>
+                        <a href="nouv-tech-eclient.html">Découvrir →</a>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="product-front">
+                        <img src="images/icons/esuivirel.png">
+                        <h3>e-SuiviRel</h3>
+                    </div>
+
+                    <div class="product-back">
+                        <p>
+                            Suivi des releveurs en temps réel
+                        </p>
+                        <a href="nouv-tech-e-suivirel.html">Découvrir →</a>
+                    </div>
+                </div>
+
+                </div>
+
+            </section>
+
+            <!-- ================= NOS RECONNAISSANCES ================= -->
+            <section class="recognitions">
+
+                <h2>Prix et reconnaissance internationale</h2>
+
+                <div class="recognition-grid">
+
+                    <!-- Bloc 1 -->
+                    <div class="recognition-card large">
+                        <img src="images/reconnaissances/award1.gif" alt="Prix international">
+
+                        <div class="recognition-content">
+                            <h3>Progiciel de Gestion Intégrée de Clientèle</h3>
+
+                            <p class="recognition-title">
+                                Gd'Or ERP
+                            </p>
+
+                            <p>
+                                Le groupe IMF/GC a été honoré en 2011 du prix international :
+                            <br><br>
+                            <b>36 TH INTERNATIONAL AWARD FOR LEADERSHIP IN IMAGE & QUALITY</b>
+                            </p>
+
+                            <p>
+                                IMF/GC tient un rôle de leadership dans le projet G d’Or d’Informatisation des sociétés
+                                de distribution d’Eau et Electricité en contribuant par des innovations technologiques
+                                et une gestion efficiente au développement des pays émergents dans le respect
+                                des normes internationales de Total Quality Management.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bloc 2 -->
+                    <div class="recognition-card">
+                        <img src="images/reconnaissances/innovation.gif" alt="Innovation">
+
+                        <div class="recognition-overlay">
+                            <h3>Prestige & Innovation</h3>
+                            <p>
+                                Le groupe IMF/GC est distingué pour le prestige,
+                                l’innovation, la qualité et l’excellence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bloc 3 -->
+                    <div class="recognition-card">
+                        <img src="images/reconnaissances/erp.gif" alt="ERP Afrique">
+
+                        <div class="recognition-overlay">
+                            <h3>L’ERP au service des sociétés d’eau et d’électricité</h3>
+
+                            <p>
+                                Progiciel de Gestion Intégrée de la clientèle pour les
+                                sociétés de distribution d’Eau et/ou d’Électricité en
+                                Afrique au Sud du Sahara.
+                            </p>
+                        </div>
+                    </div>
+
+                    </div>
+            </section>
+
+            <!-- ================= SOLUTIONS ================= -->
+
+            <section class="solutions">
+
+                <h2>Nos solutions</h2>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <h3>Gestion clientèle</h3>
+                        <p>Gestion complète des abonnés</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Facturation</h3>
+                        <p>Facturation automatisée</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Encaissement</h3>
+                        <p>Gestion des paiements</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Relevé mobile</h3>
+                        <p>Suivi des index sur le terrain</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= PARTENAIRES ================= -->
+            <section class="partners">
+                <h2>Nos partenaires</h2>
+                <p>Monsieur TOUPE remercie nos partenaires :</p>
+
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <img src="images/partners/onea.jpg" alt="ONEA">
+                        <h3>ONEA</h3>
+                        <p>Burkina Faso – agréé ISO 9001</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="images/partners/soneb.png" alt="SONEB">
+                        <h3>SONEB</h3>
+                        <p>Bénin – agréée ISO 9001</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="images/partners/sbee.png" alt="SBEE">
+                        <h3>SBEE</h3>
+                        <p>Bénin – Gestion de l’eau et de l’électricité</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="images/partners/CEET.jpg" alt="CEET">
+                        <h3>CEET</h3>
+                        <p>Togo – Distribution d’électricité</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="images/partners/tde.png" alt="TdE">
+                        <h3>TdE</h3>
+                        <p>Togo – Distribution d’électricité</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="images/partners/sne.png" alt="SNE">
+                        <h3>SNE</h3>
+                        <p>Tchad – Gestion énergétique</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="images/partners/ste.png" alt="STE">
+                        <h3>STE</h3>
+                        <p>Tchad – Gestion énergétique</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="images/partners/nigelec.png" alt="NIGELEC">
+                        <h3>NIGELEC</h3>
+                        <p>Niger – agréée ISO 9001, ISO 14001 et ILO OSH 2001</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="images/partners/nde.png" alt="NDE">
+                        <h3>NDE</h3>
+                        <p>Niger – agréée ISO 9001, ISO 14001 et ILO OSH 2001</p>
+                    </div>
+                    <div class="partner-card">
+                        <img src="images/partners/sgds.png" alt="SGDS">
+                        <h3>SGDS</h3>
+                        <p>Bénin – Société de Gestion des Déchets et de la Salubrité</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= NOS EQUIPES ================= -->
+            <section class="teams">
+
+                <h2>Nos équipes</h2>
+
+                <p class="teams-intro">
+                    Nos équipes sont composées de profils variés et complémentaires garantissant la réussite
+                    et la qualité de nos interventions.
+                </p>
+
+                <div class="teams-grid">
+
+                    <div class="team-card">
+
+                        <div class="team-icon">
+                            <img src="images/icons/team.png" alt="Equipe">
+                        </div>
+
+                        <h3>Nos équipes</h3>
+
+                        <p>
+                            Des professionnels aux compétences variées travaillant ensemble pour garantir
+                            la qualité, la réactivité et l’efficacité de nos projets.
+                        </p>
+
+                    </div>
+
+
+                    <div class="team-card">
+
+                        <div class="team-icon">
+                            <img src="images/icons/management.png" alt="Encadrement">
+                        </div>
+
+                        <h3>Encadrement</h3>
+
+                        <p>
+                            Nos projets sont encadrés par des chefs de projets, ingénieurs,
+                            experts et consultants reconnus au niveau international.
+                        </p>
+
+                    </div>
+
+
+                    <div class="team-card">
+
+                        <div class="team-icon">
+                            <img src="images/icons/logistics.png" alt="Logistique">
+                        </div>
+
+                        <h3>La logistique</h3>
+
+                        <ul>
+
+                            <li>Matériel de développement et de test (ordinateurs, imprimantes...)</li>
+
+                            <li>Salles de formation équipées pour 20 à 120 personnes</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ================= CONTACT ================= -->
+
+            <section class="contact" data-aos="fade-up">
+
+                <h2>Envoyer un message</h2>
+
+                <form action="https://formspree.io/f/xxxxabcd" method="POST">
+
+                    <input type="text" placeholder="Nom complet" required>
+
+                    <input type="email" placeholder="Adresse email" required>
+
+                    <input type="text" placeholder="Entreprise">
+
+                    <textarea placeholder="Votre message"></textarea>
+
+                    <button type="submit">Envoyer</button>
+
+                </form>
+
+            </section>
+
+            <!-- ================= MAP ================= -->
+
+            <section class="map-section">
+
+                <h2> Nos pays d'intervention</h2> <BR></BR>
+
+                <div id="map"></div>
+
+            </section>
+
+            <!-- ================= FOOTER ================= -->
+
+            <footer class="footer">
+
+                <div class="footer-container">
+
+                    <div class="footer-column">
+                        <h3>Liens Utiles</h3>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="about.html">À propos</a></li>
+                            <li><a href="solutions.html">Solutions</a></li>
+                            <li><a href="modules.html">Modules</a></li>
+                            <li><a href="contact.html">Nous contacter</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Nos progiciels</h3>
+                        <ul>
+                            <li><a href="pro-gestion-clientel.html">Gestion de la clientèle</a></li>
+                            <li><a href="pro-compta-gene.html">Comptabilité générale,analytique et budgetaire</a></li>
+                            <li><a href="prog-immo.html">Immobilisations</a></li>
+                            <li><a href="pro-achats-stocks.html">Achats & stocks</a></li>
+                            <li><a href="prog-paie-grh.html">Achats & stocks</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Nouvelles technologies</h3>
+                        <ul>
+                            <li><a href="nouv-tech-e-agence.html">e-Agence</a></li>
+                            <li><a href="nouv-tech-e-agent.html">e-Agent</a></li>
+                            <li><a href="nouv-tech-e-caisse.html">e-Caisse</a></li>
+                            <li><a href="nouv-tech-eclient.html">e-Client</a></li>
+                            <li><a href="nouv-tech-e-coupure.html">e-Coupure</a></li>
+                            <li><a href="nouv-tech-ereleve.html">e-Relève</a></li>
+                            <li><a href="nouv-tech-e-suivirel.html">e-SuiviRel</a></li>
+                            <li><a href="nouv-tech-e-stocks.html">e-Stocks</a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Infos Contact</h3>
+                        <ul class="contact-list">
+                            <li>🇧🇯 +229 01 21 32 35 80</li>
+                            <li><a href="mailto:info@gdor-erp.com">✉ info@gdor-erp.com</a></li>
+
+                            <li>🇧🇫 +226 25 37 47 97</li>
+                            <li><a href="mailto:imfbf@fasonet.bf">✉ imfbf@fasonet.bf</a></li>
+
+                            <li>🇳🇪 +227 99 32 51 77</li>
+                            <li><a href="mailto:imf.gcconseil@gmail.com">✉ imf.gcconseil@gmail.com</a></li>
+
+                            <li>🇹🇬 +228 98 15 45 55</li>
+                            <li><a href="mailto:gcauristg@gmail.com">✉ gcauristg@gmail.com</a></li>
+
+                            <li>🇹🇩 +235 63 02 15 55</li>
+                            <li><a href="mailto:gcauristg@gmail.com">✉ gcauristg@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Suivez-nous sur</h3>
+                        <div class="socials">
+                            <a href="#"><img src="images/x.svg" alt="Twitter"></a>
+                            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                            <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    © 2026 Gd'Or ERP - Tous droits réservés
+                </div>
+
+            </footer>
+
+            <!-- JS -->
+            <!-- Leaflet JS -->
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> 
+            <script src="js/script.js"></script>
+            <!--<script src="js/responsive.js"></script>-->
+
+            <script src="https://cdn.weglot.com/weglot.min.js"></script>
+            <script>
+                Weglot.initialize({
+                    api_key: "TON_API_KEY",
+                    originalLanguage: "fr",
+                    destinationLanguages: "en"
+                });
+            </script>
+        </body>
+</html>
