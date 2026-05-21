@@ -1,0 +1,39 @@
+/* animations modernes */
+
+.card{
+    background:white;
+    padding:30px;
+    width:220px;
+    border-radius:10px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 25px rgba(0,0,0,0.2);
+
+}
+
+
+/* Animation apparition*/
+
+.hero{
+    animation:fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn{
+
+    from{
+    opacity:0;
+    transform:translateY(20px);
+    }
+
+    to{
+    opacity:1;
+    transform:translateY(0);
+    }
+
+}

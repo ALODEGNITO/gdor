@@ -1,0 +1,179 @@
+    /* ================= MOBILE ================= */
+    @media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    /* MENU */
+    .menu-toggle {
+        display: block;
+    }
+
+    #navMenu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+        padding: 20px;
+    }
+
+    #navMenu.active {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    /* HERO */
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* SLIDER */
+    .main-slider {
+        height: 350px;
+    }
+
+    .slide-content {
+        top: 20%;
+        left: 5%;
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .slide-content h2 {
+        font-size: 20px;
+    }
+
+    .slide-content p {
+        font-size: 14px;
+    }
+
+    /* GRID */
+    .products-grid,
+    .domains-grid,
+    .partners-grid,
+    .teams-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CARTES */
+    .card {
+        width: 100%;
+    }
+
+    /* MAP */
+    #map {
+        width: 100%;
+        height: 300px;
+    }
+
+    }
+
+
+    @media (max-width: 768px) {
+
+    .mega-menu {
+        position: static;
+        width: 100%;
+        transform: none;
+        box-shadow: none;
+    }
+
+    .mega-grid {
+        grid-template-columns: 1fr;
+    }
+
+    }
+
+
+    /* ================= ABOUT PAGE MOBILE ================= */
+    @media (max-width: 768px) {
+
+    /* TOP BAR */
+    .top-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    /* HERO */
+    .about-hero {
+        padding: 80px 15px;
+    }
+
+    .about-hero h1 {
+        font-size: 28px;
+    }
+
+    .about-hero p {
+        font-size: 16px;
+    }
+
+    /* SECTIONS */
+    .about-mission,
+    .about-values,
+    .about-expertise,
+    .about-stats,
+    .about-vision,
+    .about-accordion {
+        padding: 60px 15px;
+    }
+
+    /* TEXT */
+    .about-mission p,
+    .about-vision p {
+        font-size: 15px;
+    }
+
+    /* GRID (déjà bon mais on force mobile propre) */
+    .values-grid,
+    .expertise-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CARDS */
+    .value-card,
+    .expertise-card {
+        padding: 20px;
+    }
+
+    /* STATS */
+    .stat h3 {
+        font-size: 28px;
+    }
+
+    /* ACCORDION */
+    .accordion-header {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .accordion-content {
+        padding: 0 10px;
+    }
+
+    /* PARTENAIRES */
+    .partners-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: 14px;
+    }
+
+    }
